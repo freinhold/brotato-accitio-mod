@@ -1,0 +1,30 @@
+[gd_resource type="Resource" load_steps=12 format=2]
+
+[ext_resource path="res://items/characters/character_data.gd" type="Script" id=1]
+[ext_resource path="res://weapons/melee/fist/1/fist_data.tres" type="Resource" id=2]
+[ext_resource path="res://weapons/melee/hand/1/hand_data.tres" type="Resource" id=3]
+[ext_resource path="res://weapons/melee/claw/1/claw_data.tres" type="Resource" id=4]
+[ext_resource path="res://weapons/ranged/shuriken/1/shuriken_data.tres" type="Resource" id=5]
+[ext_resource path="res://weapons/melee/fighting_stick/1/fighting_stick_data.tres" type="Resource" id=6]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_icon.png" type="Texture" id=7]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_effect_item_on_level_up.tres" type="Resource" id=8]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_effect_dodge_on_level_up.tres" type="Resource" id=9]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_effect_xpstart.tres" type="Resource" id=10]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_effect_additional_enemies.tres" type="Resource" id=11]
+
+[resource]
+script = ExtResource( 1 )
+my_id = "character_hunter_cat"
+unlocked_by_default = true
+icon = ExtResource( 7 )
+name = "CHARACTER_HUNTER_CAT"
+tier = 0
+value = 1
+effects = [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ]
+tracking_text = ""
+is_cursed = false
+max_nb = -1
+item_appearances = [  ]
+tags = [  ]
+wanted_tags = [ "stat_speed", "stat_lifesteal" ]
+starting_weapons = [ ExtResource( 6 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ]

@@ -1,0 +1,37 @@
+[gd_resource type="Resource" load_steps=19 format=2]
+
+[ext_resource path="res://items/characters/character_data.gd" type="Script" id=1]
+[ext_resource path="res://weapons/melee/fist/1/fist_data.tres" type="Resource" id=2]
+[ext_resource path="res://weapons/melee/hand/1/hand_data.tres" type="Resource" id=3]
+[ext_resource path="res://weapons/melee/claw/1/claw_data.tres" type="Resource" id=4]
+[ext_resource path="res://weapons/ranged/shuriken/1/shuriken_data.tres" type="Resource" id=5]
+[ext_resource path="res://weapons/melee/fighting_stick/1/fighting_stick_data.tres" type="Resource" id=6]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/shaolin/shaolin_robe_appearance.tres" type="Resource" id=7]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/shaolin/shaolin_effect_2.tres" type="Resource" id=8]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/shaolin/shaolin_effect_1.tres" type="Resource" id=9]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/shaolin/shaolin_effect_3.tres" type="Resource" id=10]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/shaolin/shaolin_effect_4.tres" type="Resource" id=11]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/shaolin/shaolin_effect_5.tres" type="Resource" id=12]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/shaolin/shaolin_head_appearance.tres" type="Resource" id=13]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/shaolin/shaolin_icon.png" type="Texture" id=14]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/shaolin/shaolin_eyes_appearance.tres" type="Resource" id=15]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/shaolin/shaolin_effect_6.tres" type="Resource" id=16]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/shaolin/shaolin_effect_7.tres" type="Resource" id=17]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/shaolin/shaolin_effect_8.tres" type="Resource" id=18]
+
+[resource]
+script = ExtResource( 1 )
+my_id = "character_shaolin"
+unlocked_by_default = true
+icon = ExtResource( 14 )
+name = "CHARACTER_SHAOLIN"
+tier = 0
+value = 1
+effects = [ ExtResource( 9 ), ExtResource( 8 ), ExtResource( 16 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 17 ), ExtResource( 18 ) ]
+tracking_text = ""
+is_cursed = false
+max_nb = -1
+item_appearances = [ ExtResource( 15 ), ExtResource( 13 ), ExtResource( 7 ) ]
+tags = [  ]
+wanted_tags = [ "xpgain", "stat_melee_damage", "stat_dodge" ]
+starting_weapons = [ ExtResource( 6 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ]

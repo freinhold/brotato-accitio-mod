@@ -1,0 +1,7 @@
+keys,en
+EXAMPLE_TRIGGER_EFFECT_ON_INTERVAL,Create a shield every x seconds
+EXAMPLE_NULLIFY_X_HITS,Nullifies the damage of {0} hit taken every wave
+EXAMPLE_ITEM_ON_LEVEL_UP,Add one {0} on level up
+CHARACTER_AGING_MAGE,Aging Mage
+CHARACTER_SHAOLIN,Shaolin
+CHARACTER_HUNTER_CAT,Hunter Cat
