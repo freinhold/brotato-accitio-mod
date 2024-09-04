@@ -32,8 +32,8 @@ func _example_effect_keys_full_serialization()->void:
 func level_up(player_index:int)->void:
 	#var effects = RunData.get_player_effects(player_index)
 	for item in RunData.get_player_effect("items_on_level_up", player_index):
-		#var data = ItemService.get_element(ItemService.items, item)
-		RunData.add_item(item, player_index)
+		var data = ItemService.get_element(ItemService.items, item)
+		RunData.add_item(data, player_index)
 	#var effects = RunData.get_player_effects(player_index)
 	#if effects["items_on_level_up"].size() > 0:
 	#	for item_id in effects["items_on_level_up"]:

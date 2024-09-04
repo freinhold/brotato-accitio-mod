@@ -14,5 +14,5 @@ static func init_effects()->Dictionary:
 static func _example_custom_effects()->Dictionary:
 	return {
 		"example_trigger_effect_on_interval": 0, # array (interval, sub_effect)
-		"items_on_level_up": [], # array (interval, sub_effect)	
+		"items_on_level_up": {}, # dictionary (interval, sub_effect)	
 	}

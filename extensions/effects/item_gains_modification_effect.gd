@@ -2,7 +2,7 @@ class_name ItemGainsModificationEffect
 extends Effect
 
 export(String) var item_displayed = ""
-export(Array, Resource) var items_modified
+export(Array, String) var items_modified
 
 
 static func get_id() -> String:
@@ -10,18 +10,21 @@ static func get_id() -> String:
 
 
 func apply(player_index: int) -> void:
-	var items = RunData.get_player_items(player_index)
+	var effects = RunData.get_player_effects(player_index)
 	for item in items_modified:
-		#var element = ItemService.get_element(ItemService.items, item)
-		RunData.add_item(item, player_index)
+		var items = effects["items_on_level_up"]
+		if items.has(item):
+			effects["items_on_level_up"][item] += value
+		else:
+			effects["items_on_level_up"][item] = value
+	ModLoaderLog.info("Adding custom effects", "Example")
+	
 
 
 func unapply(player_index: int) -> void:
-	var items = RunData.get_player_items(player_index)
-	for item in items_modified:
-		#var element = ItemService.get_element(ItemService.items, item)
-		RunData.remove_item(item, player_index)
-
+	var effects = RunData.get_player_effects(player_index)
+	for item in items_modified:		
+		effects["items_on_level_up"][item] -= value
 
 func get_args(_player_index: int) -> Array:
 	return [tr(item_displayed.to_upper()), str(abs(value))]

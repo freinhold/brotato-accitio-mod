@@ -20,6 +20,7 @@ func install_script_extensions() -> void:
 	ModLoaderLog.info("Loading files from dir " + dir, LOGGER)
 	ModLoaderMod.install_script_extension(dir + "extensions/singletons/run_data.gd")
 	ModLoaderMod.install_script_extension(dir + "extensions/singletons/player_run_data.gd")
+	ModLoaderMod.install_script_extension(dir + "extensions/singletons/item_service.gd")
 
 func loadContent() -> void: 
 	var ContentLoader = get_node("/root/ModLoader/Darkly77-ContentLoader/ContentLoader")

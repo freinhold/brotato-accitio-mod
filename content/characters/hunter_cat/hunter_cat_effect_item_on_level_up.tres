@@ -1,6 +1,5 @@
-[gd_resource type="Resource" load_steps=3 format=2]
+[gd_resource type="Resource" load_steps=2 format=2]
 
-[ext_resource path="res://items/all/mouse/mouse_data.tres" type="Resource" id=1]
 [ext_resource path="res://mods-unpacked/accitio-example/extensions/effects/item_gains_modification_effect.gd" type="Script" id=2]
 
 [resource]
@@ -12,5 +11,5 @@ custom_key = "items_on_level_up"
 storage_method = 1
 effect_sign = 3
 custom_args = [  ]
-item_displayed = "mouse"
-items_modified = [ ExtResource( 1 ) ]
+item_displayed = "item_mouse"
+items_modified = [ "item_mouse" ]

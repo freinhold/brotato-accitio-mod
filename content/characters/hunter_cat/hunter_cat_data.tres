@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=12 format=2]
+[gd_resource type="Resource" load_steps=18 format=2]
 
 [ext_resource path="res://items/characters/character_data.gd" type="Script" id=1]
 [ext_resource path="res://weapons/melee/fist/1/fist_data.tres" type="Resource" id=2]
@@ -9,8 +9,14 @@
 [ext_resource path="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_icon.png" type="Texture" id=7]
 [ext_resource path="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_effect_item_on_level_up.tres" type="Resource" id=8]
 [ext_resource path="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_effect_dodge_on_level_up.tres" type="Resource" id=9]
-[ext_resource path="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_effect_xpstart.tres" type="Resource" id=10]
-[ext_resource path="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_effect_additional_enemies.tres" type="Resource" id=11]
+[ext_resource path="res://weapons/melee/ghost_flint/1/ghost_flint_data.tres" type="Resource" id=10]
+[ext_resource path="res://weapons/melee/lightning_shiv/1/lightning_shiv_data.tres" type="Resource" id=11]
+[ext_resource path="res://weapons/melee/dagger/1/dagger_data.tres" type="Resource" id=12]
+[ext_resource path="res://weapons/melee/scissors/1/scissors_data.tres" type="Resource" id=13]
+[ext_resource path="res://weapons/melee/sharp_tooth/1/sharp_tooth_data.tres" type="Resource" id=14]
+[ext_resource path="res://weapons/melee/knife/1/knife_data.tres" type="Resource" id=15]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_head_appearance.tres" type="Resource" id=16]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_effect_white_flag_xpgain.tres" type="Resource" id=17]
 
 [resource]
 script = ExtResource( 1 )
@@ -20,11 +26,11 @@ icon = ExtResource( 7 )
 name = "CHARACTER_HUNTER_CAT"
 tier = 0
 value = 1
-effects = [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ]
+effects = [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 17 ) ]
 tracking_text = ""
 is_cursed = false
 max_nb = -1
-item_appearances = [  ]
+item_appearances = [ ExtResource( 16 ) ]
 tags = [  ]
-wanted_tags = [ "stat_speed", "stat_lifesteal" ]
-starting_weapons = [ ExtResource( 6 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ]
+wanted_tags = [ "stat_speed", "stat_lifesteal", "xpgain" ]
+starting_weapons = [ ExtResource( 6 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 10 ), ExtResource( 15 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 11 ), ExtResource( 12 ) ]
