@@ -14,7 +14,7 @@
 [ext_resource path="res://mods-unpacked/accitio-example/content/characters/aging_mage/aging_mage_effect_4.tres" type="Resource" id=12]
 [ext_resource path="res://mods-unpacked/accitio-example/content/characters/aging_mage/aging_mage_robe_appearance.tres" type="Resource" id=13]
 [ext_resource path="res://mods-unpacked/accitio-example/content/characters/aging_mage/aging_mage_icon.png" type="Texture" id=14]
-[ext_resource path="res://mods-unpacked/accitio-example/content/characters/aging_mage/aging_mage_skin_appearance.tres" type="Resource" id=15]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/aging_mage/aging_mage_effect_3.tres" type="Resource" id=16]
 
 [resource]
 script = ExtResource( 1 )
@@ -24,11 +24,11 @@ icon = ExtResource( 14 )
 name = "CHARACTER_AGING_MAGE"
 tier = 0
 value = 1
-effects = [ ExtResource( 12 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ]
+effects = [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 16 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 8 ) ]
 tracking_text = ""
 is_cursed = false
 max_nb = -1
-item_appearances = [ ExtResource( 15 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 13 ) ]
+item_appearances = [ ExtResource( 7 ), ExtResource( 6 ), ExtResource( 13 ) ]
 tags = [  ]
 wanted_tags = [ "elemental" ]
 starting_weapons = [ ExtResource( 5 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 3 ) ]

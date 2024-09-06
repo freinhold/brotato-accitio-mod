@@ -1,14 +1,13 @@
-[gd_resource type="Resource" load_steps=6 format=2]
+[gd_resource type="Resource" load_steps=5 format=2]
 
 [ext_resource path="res://mods-unpacked/Darkly77-ContentLoader/content_data.gd" type="Script" id=1]
-[ext_resource path="res://mods-unpacked/accitio-example/content/characters/example1/example1_data.tres" type="Resource" id=2]
 [ext_resource path="res://mods-unpacked/accitio-example/content/characters/aging_mage/aging_mage_data.tres" type="Resource" id=3]
 [ext_resource path="res://mods-unpacked/accitio-example/content/characters/shaolin/shaolin_data.tres" type="Resource" id=4]
 [ext_resource path="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_data.tres" type="Resource" id=5]
 
 [resource]
 script = ExtResource( 1 )
-characters = [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 5 ) ]
+characters = [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ]
 items = [  ]
 weapons = [  ]
 weapons_characters = [  ]

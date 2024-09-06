@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/aging_mage_skin.png-18423720f6d649d9f902a7612b50c373.stex"
+path="res://.import/hunter_cat_appearance_eyes.png-a5c1d05f9f3bd319fff637cad47abe20.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mods-unpacked/accitio-example/content/characters/aging_mage/aging_mage_skin.png"
-dest_files=[ "res://.import/aging_mage_skin.png-18423720f6d649d9f902a7612b50c373.stex" ]
+source_file="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_appearance_eyes.png"
+dest_files=[ "res://.import/hunter_cat_appearance_eyes.png-a5c1d05f9f3bd319fff637cad47abe20.stex" ]
 
 [params]
 

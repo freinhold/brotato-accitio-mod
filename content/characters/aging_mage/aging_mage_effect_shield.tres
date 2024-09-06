@@ -1,13 +1,16 @@
 [gd_resource type="Resource" load_steps=2 format=2]
 
-[ext_resource path="res://items/global/effect.gd" type="Script" id=1]
+[ext_resource path="res://mods-unpacked/accitio-example/extensions/effects/accitio_trigger_shield_on_interval.gd" type="Script" id=1]
 
 [resource]
 script = ExtResource( 1 )
-key = "hit_protection"
-text_key = "EXAMPLE_NULLIFY_X_HITS"
-value = 3
-custom_key = ""
-storage_method = 0
-effect_sign = 3
+key = "trigger_shield_on_interval"
+text_key = "EXAMPLE_TRIGGER_SHIELD_ON_INTERVAL"
+value = 5000
+custom_key = "trigger_shield_on_interval"
+storage_method = 1
+effect_sign = 0
 custom_args = [  ]
+stat = "stat_levels"
+scaling = 0.15
+min_interval = 1500

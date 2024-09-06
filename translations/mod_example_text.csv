@@ -1,5 +1,5 @@
 keys,en
-EXAMPLE_TRIGGER_EFFECT_ON_INTERVAL,Create a shield every x seconds
+EXAMPLE_TRIGGER_SHIELD_ON_INTERVAL,Casts a shield that prevents you from taking damage. Cooldown is reduced by level
 EXAMPLE_NULLIFY_X_HITS,Nullifies the damage of {0} hit taken every wave
 EXAMPLE_ITEM_ON_LEVEL_UP,Add one {0} on level up
 EXAMPLE_PRIORITIZED_ITEM,{1}% chance to get one {0} in shop

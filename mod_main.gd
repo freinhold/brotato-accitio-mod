@@ -22,6 +22,8 @@ func install_script_extensions() -> void:
 	ModLoaderMod.install_script_extension(dir + "extensions/singletons/run_data.gd")
 	ModLoaderMod.install_script_extension(dir + "extensions/singletons/player_run_data.gd")
 	ModLoaderMod.install_script_extension(dir + "extensions/singletons/item_service.gd")
+	ModLoaderMod.install_script_extension(dir + "extensions/entities/units/player/player.gd")
+	ModLoaderMod.install_script_extension(dir + "extensions/ui/hud/ui_progress_bar.gd")
 	
 	# ui
 	#ModLoaderMod.install_script_extension(dir + "extensions/ui/menus/shop/base_shop.gd")
