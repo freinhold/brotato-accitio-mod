@@ -11,13 +11,12 @@ static func get_id() -> String:
 
 func apply(player_index: int) -> void:
 	var effects = RunData.get_player_effects(player_index)
+	var items = effects["items_on_level_up"]
 	for item in items_modified:
-		var items = effects["items_on_level_up"]
 		if items.has(item):
 			effects["items_on_level_up"][item] += value
 		else:
 			effects["items_on_level_up"][item] = value
-	ModLoaderLog.info("Adding custom effects", "Example")
 	
 
 

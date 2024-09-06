@@ -18,15 +18,19 @@ func _init(modLoader = ModLoader) -> void:
 
 func install_script_extensions() -> void:
 	ModLoaderLog.info("Loading files from dir " + dir, LOGGER)
+	#ModLoaderMod.install_script_extension(dir + "extensions/singletons/utils.gd")
 	ModLoaderMod.install_script_extension(dir + "extensions/singletons/run_data.gd")
 	ModLoaderMod.install_script_extension(dir + "extensions/singletons/player_run_data.gd")
 	ModLoaderMod.install_script_extension(dir + "extensions/singletons/item_service.gd")
+	
+	# ui
+	#ModLoaderMod.install_script_extension(dir + "extensions/ui/menus/shop/base_shop.gd")
 
 func loadContent() -> void: 
 	var ContentLoader = get_node("/root/ModLoader/Darkly77-ContentLoader/ContentLoader")
 	var content_dir = dir + "content_data/"
 	
-	ContentLoader.load_data(content_dir + "example1_characters.tres", LOGGER)
+	ContentLoader.load_data(content_dir + "accitio_characters.tres", LOGGER)
 
 
 func add_translations() -> void:

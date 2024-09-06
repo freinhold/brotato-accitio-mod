@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://mods-unpacked/accitio-example/extensions/effects/accitio_prioritized_item_effect.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+key = "item_white_flag"
+text_key = "EXAMPLE_PRIORITIZED_ITEM"
+value = 10
+custom_key = "prioritized_items"
+storage_method = 1
+effect_sign = 3
+custom_args = [  ]
+item_displayed = "item_white_flag"
+items_modified = [ "item_white_flag" ]

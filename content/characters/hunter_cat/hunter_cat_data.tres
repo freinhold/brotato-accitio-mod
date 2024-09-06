@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=18 format=2]
+[gd_resource type="Resource" load_steps=20 format=2]
 
 [ext_resource path="res://items/characters/character_data.gd" type="Script" id=1]
 [ext_resource path="res://weapons/melee/fist/1/fist_data.tres" type="Resource" id=2]
@@ -7,7 +7,7 @@
 [ext_resource path="res://weapons/ranged/shuriken/1/shuriken_data.tres" type="Resource" id=5]
 [ext_resource path="res://weapons/melee/fighting_stick/1/fighting_stick_data.tres" type="Resource" id=6]
 [ext_resource path="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_icon.png" type="Texture" id=7]
-[ext_resource path="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_effect_item_on_level_up.tres" type="Resource" id=8]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_effect_prioritized_item.tres" type="Resource" id=8]
 [ext_resource path="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_effect_dodge_on_level_up.tres" type="Resource" id=9]
 [ext_resource path="res://weapons/melee/ghost_flint/1/ghost_flint_data.tres" type="Resource" id=10]
 [ext_resource path="res://weapons/melee/lightning_shiv/1/lightning_shiv_data.tres" type="Resource" id=11]
@@ -17,6 +17,8 @@
 [ext_resource path="res://weapons/melee/knife/1/knife_data.tres" type="Resource" id=15]
 [ext_resource path="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_head_appearance.tres" type="Resource" id=16]
 [ext_resource path="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_effect_white_flag_xpgain.tres" type="Resource" id=17]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_effect_item_on_level_up.tres" type="Resource" id=18]
+[ext_resource path="res://mods-unpacked/accitio-example/content/characters/hunter_cat/hunter_cat_effect_harvesting_increase.tres" type="Resource" id=19]
 
 [resource]
 script = ExtResource( 1 )
@@ -26,7 +28,7 @@ icon = ExtResource( 7 )
 name = "CHARACTER_HUNTER_CAT"
 tier = 0
 value = 1
-effects = [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 17 ) ]
+effects = [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ) ]
 tracking_text = ""
 is_cursed = false
 max_nb = -1
