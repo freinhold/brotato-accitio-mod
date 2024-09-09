@@ -13,7 +13,7 @@ static func init_effects()->Dictionary:
 
 static func _accitio_custom_effects()->Dictionary:
 	return {
-		"trigger_shield_on_interval": ShieldConfiguration, # interval
+		"trigger_shield_on_interval": null, # ShieldConfiguration
 		"items_on_level_up": {}, # dictionary (item, amount)	
 		"prioritized_items": {}, # dictionary (item, amount)	
 	}

@@ -10,9 +10,10 @@ static func get_id() -> String:
 
 
 func apply(player_index: int) -> void:
-	var effects = RunData.get_player_effects(player_index)
-	var config = ShieldConfiguration.new(value, stat, scaling, min_interval)
-	effects["trigger_shield_on_interval"] = config 
+	if (value > -1):
+		var effects = RunData.get_player_effects(player_index)
+		var config = ShieldConfiguration.new(value, stat, scaling, min_interval)
+		effects["trigger_shield_on_interval"] = config 
 
 
 func unapply(player_index: int) -> void:
